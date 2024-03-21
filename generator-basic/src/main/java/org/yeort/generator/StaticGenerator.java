@@ -9,8 +9,9 @@ import java.io.File;
 public class StaticGenerator {
     public static void main(String[] args) {
         String projectPath = System.getProperty("user.dir");
-        String inputPath = "generator-demo-projects" + File.separator + "acm-template";
-        String outputPath = "";
+        String inputPath =projectPath+File.separator+ "generator-demo-projects" + File.separator + "acm-template";
+        String outputPath = projectPath;
+        copyFilesByHutool(inputPath, outputPath);
     }
 
     /**
