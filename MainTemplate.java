@@ -3,14 +3,11 @@ package com.yeort.acm;
 import java.util.scanner
 
 /**
- * @author ${author}
+ * @author yeort
  */
 public class MainTemplate{
     public static void main(String[] atgs){
         Scanner scanner = new Scanner(System.in);
-<#if loop>
-        while (scanner.hasNext()){
-</#if>
             int n = scanner.nextInt();
 
             int[] arr = new int[n];
@@ -21,10 +18,7 @@ public class MainTemplate{
             for (int num:arr){
                 sum+=num;
             }
-            System.out.println("${outputText}: "+ sum);
-<#if loop>
-        }
-</#if>
+            System.out.println("uuiujpgo: "+ sum);
         scanner.close();
     }
 }
