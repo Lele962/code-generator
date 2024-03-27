@@ -10,8 +10,7 @@ public class StaticGenerator {
     public static void main(String[] args) {
         String projectPath = System.getProperty("user.dir");
         String inputPath =projectPath+File.separator+ "generator-demo-projects" + File.separator + "acm-template";
-        String outputPath = projectPath;
-        copyFilesByHutool(inputPath, outputPath);
+        copyFilesByHutool(inputPath, projectPath);
     }
 
     /**
